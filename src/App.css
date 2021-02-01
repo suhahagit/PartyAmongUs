@@ -1,0 +1,230 @@
+.roomGrid {
+	height: 90vh;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 1vw;
+	margin: 1vw 0;
+}
+
+#sideMenuHeader, .song_playlist {
+	color: white;
+}
+
+.song_playlist {
+	font-size: 150%;
+}
+
+.votes {
+	color: white;
+	font-size: 150%;
+}
+
+#songs_list {
+	max-height: 40%;
+	overflow-y: auto;
+}
+
+.song_hover {
+	cursor: pointer;
+}
+
+.song_hover:hover {
+	background-color: bisque;
+}
+
+.song_vote_icon {
+	display: grid;
+	grid-template-columns: 6fr 1fr 2fr;
+}
+
+#sideMenuHeader h2 {
+	text-align: center;
+}
+
+#avatarUser {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1vw;
+}
+
+#avatarUser img {
+	justify-self: end;
+}
+
+#header {
+	height: 8vh;
+	background-color: transparent;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: stretch;
+	padding: 1vh;
+}
+
+#room {
+	height: 90vh;
+	max-height: 90vh;
+}
+
+#sideMenu img {
+	height: 10vh;
+}
+
+#home {
+	display: grid;
+	grid-template-rows: 1fr 9fr;
+	grid-gap: 1vh;
+	margin: 1vh;
+	height: 90vh;
+	z-index: 0;
+}
+
+#userInfo {
+	padding: 1vh;
+}
+
+#underboard, #host_power {
+	display: grid;
+	grid-template-columns: 2.7fr 1fr;
+}
+
+.react-emoji {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+canvas {
+	border-radius: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+#heading_home {
+	margin-top: 3%;
+	margin-bottom: 0;
+	margin-left: 1%;
+	font-size: 180%;
+	color: white;
+	letter-spacing: 3px;
+	word-spacing: 3px;
+}
+
+#top10 {
+	display: grid;
+	grid-template-columns: repeat(4 , 1fr);
+	margin: 1vw;
+	grid-gap: 2vw;
+}
+
+.tag {
+	background-color: lightslategray;
+}
+
+.roomResult {
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+	cursor: pointer;
+	border-radius: 10%;
+	box-shadow: 0 3px 3px 0 floralwhite;
+}
+
+.roomResult:hover {
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 0 4px 4px 0 floralwhite;
+}
+
+.roomResult img {
+	width : 100%;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+}
+
+#userActions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10vw;
+}
+
+.input-hidden {
+	position: absolute;
+	visibility:hidden;
+}
+
+.MuiFormLabel-root, .MuiOutlinedInput-root {
+	font-family: 'Acme', sans-serif !important;
+}
+
+input[type=radio]:checked + label {
+	box-shadow: 0 0 3px 3px #090;
+	cursor: default;
+}
+
+input[type=radio]:enabled:not(:checked) + label {
+	cursor: pointer;
+}
+
+input[type=radio]:disabled + label {
+	cursor: not-allowed;
+	filter: opacity(30%);
+}
+
+input[type=radio] + label {
+	border: 1px solid transparent;
+	box-shadow: 0 0 3px 3px transparent;
+	align-self: baseline;
+}
+
+#search, #song {
+	position: absolute;
+	justify-self: center;
+	width: 30%;
+	left: 31%;
+	top: 2.6%;
+	font-size: 150%;
+	word-spacing: 3px;
+	letter-spacing: 2px;
+	border-radius: 10px;
+	font-family: 'Acme', sans-serif;
+	background: rgba(255,255,255,0.7);
+	text-align: center;
+	border: none;
+	outline: none;
+	height: 5%;
+	padding: 10px;
+	color: #333;
+	box-shadow: 1px 1px 2px 1px rgba(255,255,255,0.5);
+}
+
+#search:focus, #song:focus {
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 2px 2px 10px 1px rgba(255,255,255,0.5);
+}
+
+#avatarsImg {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 10px;
+}
+
+body {
+	margin: 0.5% 9vw;
+	font-family: 'Acme', sans-serif;
+}
+
+@media(max-width: 1600px) {
+	body{
+		margin: 0;
+	}
+}
+
+@media(max-width: 768px) {
+	body {
+		margin: 0;
+	}
+
+	#top10 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1vh;
+		color: white;
+	}
+}
